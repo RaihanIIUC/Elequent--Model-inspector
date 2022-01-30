@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Badge;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreProductRequest;
+use App\Http\Requests\UpdateProductRequest;
+use App\Models\Product;
 
-class BadgeController extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -30,10 +31,10 @@ class BadgeController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\StoreProductRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreProductRequest $request)
     {
         //
     }
@@ -41,10 +42,10 @@ class BadgeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Badge  $badge
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Badge $badge)
+    public function show(Product $product)
     {
         //
     }
@@ -52,10 +53,10 @@ class BadgeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Badge  $badge
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(Badge $badge)
+    public function edit(Product $product)
     {
         //
     }
@@ -63,11 +64,11 @@ class BadgeController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Badge  $badge
+     * @param  \App\Http\Requests\UpdateProductRequest  $request
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Badge $badge)
+    public function update(UpdateProductRequest $request, Product $product)
     {
         //
     }
@@ -75,10 +76,10 @@ class BadgeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Badge  $badge
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Badge $badge)
+    public function destroy(Product $product)
     {
         //
     }
