@@ -127,8 +127,39 @@
                     <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </div>
+
+                        <p class="master">
+                            i love js
+                        </p>  
+                           <p class="master">
+                            i love js
+                        </p>   
+                          <h1 class="master">
+                            i love js
+                        </h1>
+
+                        <button id="btn">
+                            Submit
+                        </button>
+
                 </div>
             </div>
         </div>
+
+    
     </body>
+
+
+    <script>
+       const btn = document.getElementById('btn');
+
+       btn.addEventListener('click',function master2(){
+           var master = document.getElementsByClassName('master');
+           master[2].innerHTML = "i am mass applying now";
+           const createEL = document.createElement('div');
+           createEL.innerHTML = "I am frontend dev";
+
+           master[2].appendChild(createEL)
+       })
+    </script>
 </html>
